@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
-test('User can log in and delete account', async ({ page }) => {
+test('Вхід в акаунт та подальше видалення', async ({ page }) => {
   await page.goto('http://automationexercise.com');
   
   await expect(page).toHaveTitle(/Automation Exercise/);

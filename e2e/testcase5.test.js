@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
-test('Signup with already registered email', async ({ page }) => {
+test('Реєстрація з вже використаною електронною поштою', async ({ page }) => {
   await page.goto('http://automationexercise.com');
 
   await expect(page).toHaveTitle(/Automation Exercise/);

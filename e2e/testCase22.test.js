@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
-test('Add recommended product to cart and verify in cart', async ({ page }) => {
+test('Додавання товару до кошику та перевірка кошику на наявність цього продукту', async ({ page }) => {
   await page.goto('http://automationexercise.com');
 
   await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));

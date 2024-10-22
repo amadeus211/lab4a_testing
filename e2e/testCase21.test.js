@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
-test('Submit product review and verify success message', async ({ page }) => {
+test('Написання відгуку про товар та отримання повідомлення про успішну відправку', async ({ page }) => {
   await page.goto('http://automationexercise.com');
 
   await page.click('a:has-text("Products")');
